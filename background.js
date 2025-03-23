@@ -20,12 +20,6 @@ chrome.declarativeNetRequest.updateDynamicRules({
 	})),
 });
 
-chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-	if (msg.type === "adRequest") {
-		// Handle ad request (if needed)
-	}
-});
-
 async function updateAdPatterns() {
 	try {
 		const response = await fetch(
