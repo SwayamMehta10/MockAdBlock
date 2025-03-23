@@ -1,0 +1,44 @@
+{
+	"manifest_version": 3,
+	"name": "MockAdBlock",
+	"description": "A Passive Aggressive Ad Blocker that lets you know when it's working",
+	"version": "1.1",
+	"permissions": ["declarativeNetRequest", "storage", "alarms"],
+	"host_permissions": ["<all_urls>", "https://easylist.to/*"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"exclude_matches": [
+				"*://*.youtube.com/*",
+				"*://*.openai.com/*",
+				"*://*.claude.ai/*",
+				"*://*.perplexity.ai/*",
+				"*://*.github.com/*",
+				"*://*.netflix.com/*",
+				"*://*.amazon.com/*",
+				"*://*.twitter.com/*",
+				"*://*.x.com/*",
+				"*://*.threads.net/*",
+				"*://*.instagram.com/*",
+				"*://*.reddit.com/*",
+				"*://*.tiktok.com/*",
+				"*://*.chatgpt.com/*"
+			],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	],
+	"action": {
+		"default_popup": "options.html",
+		"default_icon": "assets/icon.png"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["assets/*.gif"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}

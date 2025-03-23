@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MockAdBlock</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			h1 {
+				color: #333;
+			}
+			select {
+				margin-top: 10px;
+				padding: 5px;
+				font-size: 16px;
+			}
+			#status {
+				margin-top: 20px;
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>MockAdBlock</h2>
+		<label for="mode">Choose your snark mode:</label>
+		<select id="mode">
+			<option value="classicSnark">Classic Snark</option>
+			<option value="dadJoke">Dad Joke</option>
+			<option value="existentialCrisis">Existential Crisis</option>
+			<option value="techHumor">Tech Humor</option>
+			<option value="motivational">Motivational (but not really)</option>
+		</select>
+		<div id="status"></div>
+		<script src="options.js"></script>
+	</body>
+</html>
