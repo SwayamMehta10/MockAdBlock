@@ -6,27 +6,53 @@
 		<title>MockAdBlock</title>
 		<style>
 			body {
-				font-family: Arial, sans-serif;
-				max-width: 600px;
-				margin: 0 auto;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+				text-align: center;
 				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+				width: 300px;
+				margin: 0 auto;
 			}
-			h1 {
-				color: #333;
+			h2 {
+				color: #fff;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+			}
+			label {
+				font-size: 16px;
+				color: #fff;
 			}
 			select {
 				margin-top: 10px;
-				padding: 5px;
+				padding: 8px;
 				font-size: 16px;
+				border-radius: 5px;
+				border: none;
+				background: #fff;
+				transition: transform 0.2s ease-in-out;
+			}
+			select:hover {
+				transform: scale(1.1);
 			}
 			#status {
 				margin-top: 20px;
 				font-style: italic;
+				color: #fff;
 			}
 		</style>
 	</head>
 	<body>
-		<h2>MockAdBlock</h2>
+		<h2>🎭 MockAdBlock</h2>
+		<img
+			src="assets/gif1.gif"
+			alt="MockAdBlock GIF"
+			style="
+				max-width: 100%;
+				border-radius: 10px;
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			"
+		/>
 		<label for="mode">Choose your snark mode:</label>
 		<select id="mode">
 			<option value="classicSnark">Classic Snark</option>

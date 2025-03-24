@@ -3,7 +3,20 @@
   <img src="assets/gif12.gif" alt="MockAdBlock GIF" />
 </p>
 
-> **MockAdBlock** is your snarky sidekick in the battle against ads! It doesn't just block ads; it replaces them with witty messages, jokes, and entertaining GIFs. Enjoy a more amusing browsing experience as MockAdBlock works its magic on most websites (though some with messy HTML might slip through). Get ready to be entertained while you surf!
+> **MockAdBlock** is your snarky sidekick in the battle against ads! It doesn't just block ads; it replaces them with witty messages, jokes, and entertaining GIFs. Enjoy a more amusing browsing experience as this passive-aggressive ad blocker works its magic on most websites (though some with messy HTML might slip through). Get ready to be entertained while you surf!
+
+<video width="400" height="400" controls autoplay loop muted>
+  <source src="assets/example1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="400" height="400" controls autoplay loop muted>
+  <source src="assets/example3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="400" height="400" controls autoplay loop muted>
+  <source src="assets/example4.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 🚀 Installation Guide
 
@@ -40,6 +53,14 @@ MockAdBlock offers a variety of snark modes to keep you entertained:
 - **Motivational (but not really)**: Sarcastic and humorous motivational quotes.
 
 Click on the extension to choose your favorite mode and enjoy a personalized snarky browsing experience!
+
+<video width="400" height="400" controls autoplay loop muted>
+  <source src="assets/example2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<br>
+❗❗❗P.S. The actual content of websites may sometimes get replaced, so just change the site access setting from "On all sites" to "When you click the extension".
 
 ## 🌟 Show Your Support
 
