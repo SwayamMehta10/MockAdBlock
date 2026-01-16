@@ -1,66 +1,63 @@
-<h1 align="center">Welcome to MockAdBlock 👋</h1>
+<h1 align="center">Welcome to MockAdBlock</h1>
 <p align="center">
   <img src="assets/gif12.gif" alt="MockAdBlock GIF" />
 </p>
 
 > **MockAdBlock** is your snarky sidekick in the battle against ads! It doesn't just block ads; it replaces them with witty messages, jokes, and entertaining GIFs. Enjoy a more amusing browsing experience as this passive-aggressive ad blocker works its magic on most websites (though some with messy HTML might slip through). Get ready to be entertained while you surf!
 
-![Example 1](assets/example1.gif)
 ![Example 3](assets/example3.gif)
-![Example 4](assets/example4.gif)
 
-## 🚀 Installation Guide
+![Example 1](assets/example1.gif)
 
-#### Step 1: Clone the Repository
+## Installation Guide
 
-```sh
-git clone https://github.com/SwayamMehta10/MockAdBlock.git
-```
+### Manual Installation
 
-#### Step 2: Open Chrome Extensions Page
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/SwayamMehta10/MockAdBlock.git
+    ```
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable **Developer mode** in the top right corner
+4. Click **Load unpacked** and select the `MockAdBlock` directory
+5. Start browsing with attitude!
 
-Fire up Chrome and head over to `chrome://extensions/`.
-
-#### Step 3: Enable Developer Mode
-
-Flip the **Developer mode** switch in the top right corner.
-
-#### Step 4: Load Unpacked Extension
-
-Hit the **Load unpacked** button and choose the `MockAdBlock` directory you just cloned.
-
-#### Step 5: Enjoy the Snark!
-
-Boom! MockAdBlock is now live. Surf the web and bask in the passive-aggressive glory. 🎉
-
-## 🎭 Snark Modes
+## Snark Modes
 
 MockAdBlock offers a variety of snark modes to keep you entertained:
 
-- **Classic Snark**: The original and timeless snarky comments.
-- **Dad Joke**: Corny and funny dad jokes to lighten your mood.
-- **Existential Crisis**: Deep and thought-provoking messages that make you question everything.
-- **Tech Humor**: Jokes and comments that only tech enthusiasts will understand.
-- **Motivational (but not really)**: Sarcastic and humorous motivational quotes.
+-   **Classic Snark**: The original and timeless snarky comments.
+-   **Dad Joke**: Corny and funny dad jokes to lighten your mood.
+-   **Existential Crisis**: Deep and thought-provoking messages that make you question everything.
+-   **Tech Humor**: Jokes and comments that only tech enthusiasts will understand.
+-   **Motivational (but not really)**: Sarcastic and humorous motivational quotes.
 
-Click on the extension to choose your favorite mode and enjoy a personalized snarky browsing experience!
+## How to Use
+
+1. Click the **MockAdBlock** icon in your Chrome toolbar
+2. Choose your preferred snark mode from the dropdown menu
+3. Browse any website and watch ads get replaced with entertaining content
+4. Change modes anytime to keep things fresh!
 
 ![Example 2](assets/example2.gif)
 
-<br>
-❗❗❗P.S. The actual content of websites may sometimes get replaced, so just change the site access setting from "On all sites" to "When you click the extension".
+### Important Note
 
-## 🌟 Show Your Support
+MockAdBlock works on most websites but excludes major platforms like YouTube, Netflix, Amazon, and social media sites to ensure they function properly. If you notice any issues with website content being replaced, you can adjust the extension's site access settings in Chrome.
 
-If you enjoyed using MockAdBlock, please consider giving it a ⭐️ on GitHub! Your support helps keep the snark alive and motivates me to improve the extension.
+## Features
 
-Spread the word and let others join the fun! 🚀
+-   **Multiple Snark Modes**: Switch between different humor styles on the fly
+-   **Visual Entertainment**: Ads are replaced with entertaining GIFs and messages
+-   **Smart Filtering**: Excludes major platforms to prevent interference
+-   **Lightweight**: Minimal performance impact on your browsing
+-   **Easy Toggle**: Simple popup interface to change settings instantly
 
-## 👤 About the Author
+## Show Your Support
 
-**Swayam Mehta** is a passionate developer who loves creating fun and useful tools. Check out more of his work on his [portfolio](https://swayam-mehta-portfolio.vercel.app/) and connect with him on:
+If you enjoyed using MockAdBlock, please consider:
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SwayamMehta10)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/swayammehta10)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/haveYouMetSam_)
-[![Threads](https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white)](https://threads.net/@swayam_mehta_)
+-   ⭐ Giving it a star on [GitHub](https://github.com/SwayamMehta10/MockAdBlock)
+-   📢 Sharing it with friends who need more snark in their lives
+
+Your support helps keep the extension alive and motivates continued improvements!

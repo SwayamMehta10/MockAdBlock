@@ -5,54 +5,158 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MockAdBlock</title>
 		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+
+			* {
+				box-sizing: border-box;
+			}
+
 			body {
-				font-family: "Comic Sans MS", cursive, sans-serif;
-				background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+				font-family: "Space Grotesk", "Arial Black", sans-serif;
+				background-color: #faf5ff;
 				text-align: center;
 				padding: 20px;
-				border-radius: 10px;
-				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-				width: 300px;
-				margin: 0 auto;
+				width: 320px;
+				margin: 0;
+				position: relative;
 			}
+
+			/* Decorative corner elements */
+			body::before,
+			body::after {
+				content: "";
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				border: 4px solid #1a1a1a;
+				background-color: #ffde59;
+			}
+
+			body::before {
+				top: 8px;
+				left: 8px;
+				border-radius: 50%;
+			}
+
+			body::after {
+				bottom: 150px;
+				right: 15px;
+				clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+			}
+
 			h2 {
-				color: #fff;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+				color: #1a1a1a;
+				font-size: 24px;
+				font-weight: 700;
+				letter-spacing: 2px;
+				margin-bottom: 16px;
+				background-color: #b794f6;
+				padding: 12px;
+				border: 4px solid #1a1a1a;
+				box-shadow: 6px 6px 0px #1a1a1a;
+				position: relative;
 			}
+
+			/* Decorative line under title */
+			h2::after {
+				content: "";
+				position: absolute;
+				bottom: 70px;
+				left: 65%;
+				transform: translateX(-50%);
+				width: 70%;
+				height: 4px;
+				background: repeating-linear-gradient(
+					45deg,
+					#1a1a1a 0px,
+					#1a1a1a 8px,
+					transparent 8px,
+					transparent 12px
+				);
+			}
+
 			label {
-				font-size: 16px;
-				color: #fff;
+				font-size: 14px;
+				font-weight: 700;
+				color: #1a1a1a;
+				text-transform: uppercase;
+				display: block;
+				margin: 4px 0 8px 0;
 			}
+
 			select {
-				margin-top: 10px;
-				padding: 8px;
-				font-size: 16px;
-				border-radius: 5px;
-				border: none;
-				background: #fff;
-				transition: transform 0.2s ease-in-out;
+				width: 100%;
+				margin-top: 8px;
+				padding: 12px;
+				font-family: "Space Grotesk", "Arial Black", sans-serif;
+				font-size: 12px;
+				font-weight: 700;
+				text-transform: uppercase;
+				border: 4px solid #1a1a1a;
+				border-radius: 0;
+				background: #9f7aea;
+				color: #fffef0;
+				cursor: pointer;
+				box-shadow: 4px 4px 0px #1a1a1a;
+				transition: transform 0.1s ease, box-shadow 0.1s ease;
+				appearance: none;
+				-webkit-appearance: none;
 			}
+
 			select:hover {
-				transform: scale(1.1);
+				transform: translate(-2px, -2px);
+				box-shadow: 6px 6px 0px #1a1a1a;
+				background: #805ad5;
 			}
+
+			select:active {
+				transform: translate(2px, 2px);
+				box-shadow: 2px 2px 0px #1a1a1a;
+			}
+
+			select:focus {
+				outline: none;
+				background: #805ad5;
+			}
+
 			#status {
+				margin-top: 16px;
+				padding: 10px;
+				font-weight: 700;
+				font-size: 12px;
+				color: #1a1a1a;
+				background-color: #ffde59;
+				border: 3px solid #1a1a1a;
+				box-shadow: 4px 4px 0px #1a1a1a;
+				min-height: 42px;
+			}
+
+			#status:empty {
+				display: none;
+			}
+
+			img {
+				max-width: 100%;
+				border: 4px solid #1a1a1a;
+				box-shadow: 6px 6px 0px #1a1a1a;
+				margin-bottom: 16px;
+			}
+
+			/* Decorative tagline */
+			.tagline {
+				font-size: 10px;
+				color: #6b46c1;
+				text-transform: uppercase;
+				letter-spacing: 3px;
 				margin-top: 20px;
-				font-style: italic;
-				color: #fff;
+				padding-top: 16px;
+				border-top: 3px dashed #1a1a1a;
 			}
 		</style>
 	</head>
 	<body>
-		<h2>🎭 MockAdBlock</h2>
-		<img
-			src="assets/gif1.gif"
-			alt="MockAdBlock GIF"
-			style="
-				max-width: 100%;
-				border-radius: 10px;
-				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-			"
-		/>
+		<h2>MockAdBlock</h2>
+		<img src="assets/gif1.gif" alt="MockAdBlock GIF" />
 		<label for="mode">Choose your snark mode:</label>
 		<select id="mode">
 			<option value="classicSnark">Classic Snark</option>
@@ -62,6 +166,7 @@
 			<option value="motivational">Motivational (but not really)</option>
 		</select>
 		<div id="status"></div>
+		<div class="tagline">Sass, not ads</div>
 		<script src="options.js"></script>
 	</body>
 </html>

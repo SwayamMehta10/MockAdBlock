@@ -26,10 +26,22 @@ async function updateAdPatterns() {
 			"https://easylist.to/easylist/easylist.txt"
 		);
 		const filterList = await response.text();
+
+		// Get element hiding selectors (## prefix) - these are what ad blockers use
 		const elementFilters = filterList
 			.split("\n")
-			.filter((line) => line.startsWith("##"))
-			.map((line) => line.replace("##", ""));
+			.filter((line) => line.startsWith("##") && !line.includes(":"))
+			.map((line) => line.replace("##", ""))
+			.filter((selector) => {
+				// Filter out complex selectors that might cause errors
+				if (selector.includes(">") || selector.includes("+")) return false;
+				if (selector.includes(":-") || selector.includes(":has")) return false;
+				// Keep simple class, id, and attribute selectors
+				return selector.startsWith(".") ||
+				       selector.startsWith("#") ||
+				       selector.startsWith("[");
+			})
+			.slice(0, 500); // Use more selectors
 
 		chrome.storage.local.set({ adSelectors: elementFilters });
 	} catch (error) {
